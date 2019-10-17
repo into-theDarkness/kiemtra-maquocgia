@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtramaquocgia</title>
+</head>
+<body>
+
+<script>
+    regexp =/^[0-9]{5}(?:-[0-9]{4})?$/
+    let zipcode = prompt("nhap ma zipcode vao day")
+    function is_usZipcde(zipcode) {
+        regexp =/^[0-9]{5}(?:-[0-9]{4})?$/
+        if(regexp.test(zipcode)==true){
+            return true;
+        } return false;
+    }
+    if (is_usZipcde(zipcode)==true){
+        document.write("Day la zipcode cua quoc qia")
+    } else {
+        document.write("Day k phai la zipcode cua quoc gia")
+    }
+</script>
+</body>
+</html>
